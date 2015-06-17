@@ -1,0 +1,38 @@
+<HTML>
+<head></head>
+<body>
+
+Bitmap formats (JPEG, PNG, BMP, GIF) are images that are displayed with pixels, or tiny colored dots. Vector graphics, on the other hand, are rendered by the computer based on mathematical formulas and code. For example, a circle would be defined by a radius of a certain size, the color of the outline, the color of the filled inside, its location, and so on. Because vector graphics are defined mathematically, they don't have a fixed resolution. You can zoom in or out of a vector image, and the display remains sharp. If you zoom into a bitmap file, you'll see the pixels that make up the image.
+
+<a href="http://www.theguardian.com/film/interactive/2014/mar/02/oscars-award-nominees-age-best-actress-actor" target="_blank">An example of charts rendered as vector graphics, from the Guardian.</a>
+<div><a href="http://www.npr.org/blogs/money/2014/03/18/289013884/who-had-richer-parents-doctors-or-arists" target="_blank">An example of charts rendered as bitmap images, from NPR Planet Money.</a></div>
+&nbsp;
+
+Microsoft Excel can output charts as JPEG, GIF, BMP, or PNG (bitmap formats), or as PDF (vector). You can convert the PDF file into an SVG (Scaleable Vector Graphics), which is a common format for displaying vector graphics in a browser. Your images will be sharper and easier to edit in a vector graphics editing program like Adobe Illustrator.
+
+&nbsp;
+<div>
+<ol>
+	<li>In Microsoft Excel, size your chart (width and height) in the FORMAT tab.
+<a href="http://chun.spring-2014.dataviz.journalism.cuny.edu/media/785/files/2014/03/Screen-Shot-2014-03-25-at-10.21.59-AM.png"><img class="alignnone  wp-image-699" src="http://chun.spring-2014.dataviz.journalism.cuny.edu/media/785/files/2014/03/Screen-Shot-2014-03-25-at-10.21.59-AM.png" alt="Screen Shot 2014-03-25 at 10.21.59 AM" width="583" height="337" /></a></li>
+	<li>Select the text in the horizontal and vertical axes, and choose Format Selection to change the Font to Arial. The default Excel font is a bit unusual and sometimes throws off the conversion of text in later steps.
+<a href="http://chun.spring-2014.dataviz.journalism.cuny.edu/media/785/files/2014/03/Screen-Shot-2014-03-25-at-10.23.27-AM.png"><img class="alignnone  wp-image-700" src="http://chun.spring-2014.dataviz.journalism.cuny.edu/media/785/files/2014/03/Screen-Shot-2014-03-25-at-10.23.27-AM.png" alt="Screen Shot 2014-03-25 at 10.23.27 AM" width="434" height="274" /></a></li>
+	<li>Right-click (Ctrl-click) on the chart frame and choose Save As Picture.
+<a href="http://chun.spring-2014.dataviz.journalism.cuny.edu/media/785/files/2014/03/Screen-Shot-2014-03-25-at-10.22.30-AM.png"><img class="alignnone  wp-image-701" src="http://chun.spring-2014.dataviz.journalism.cuny.edu/media/785/files/2014/03/Screen-Shot-2014-03-25-at-10.22.30-AM.png" alt="Screen Shot 2014-03-25 at 10.22.30 AM" width="401" height="257" /></a></li>
+	<li>Save your chart picture as a PDF.
+<a href="http://chun.spring-2014.dataviz.journalism.cuny.edu/media/785/files/2014/03/Screen-Shot-2014-03-25-at-10.22.41-AM.png"><img class="alignnone size-full wp-image-703" src="http://chun.spring-2014.dataviz.journalism.cuny.edu/media/785/files/2014/03/Screen-Shot-2014-03-25-at-10.22.41-AM.png" alt="Screen Shot 2014-03-25 at 10.22.41 AM" width="362" height="122" /></a></li>
+	<li>Open the PDF in Adobe Illustrator. If you're comfortable with Illustrator, you can edit your chart.
+<a href="http://chun.spring-2014.dataviz.journalism.cuny.edu/media/785/files/2014/03/Screen-Shot-2014-03-25-at-10.46.38-AM.png"><img class="alignnone  wp-image-704" src="http://chun.spring-2014.dataviz.journalism.cuny.edu/media/785/files/2014/03/Screen-Shot-2014-03-25-at-10.46.38-AM.png" alt="Screen Shot 2014-03-25 at 10.46.38 AM" width="487" height="339" /></a></li>
+	<li>Choose File &gt; Save As, and save as a SVG (compressed optional).</li>
+	<li>If you don't have access to Illustrator, you can use the free online tool <a href="https://cloudconvert.org/svg-to-pdf" target="_blank">CloudConvert</a> (https://cloudconvert.org/svg-to-pdf), which can convert your PDF to SVG. The only downside is that you can't edit your graphics. <span style="line-height: 1.5em;">
+</span></li>
+	<li>The resulting SVG file is simply an HTML text file that describes the shapes for your chart. You can open it up in a browser, or copy and paste it into another HTML document to display your chart.
+<a href="http://chun.spring-2014.dataviz.journalism.cuny.edu/media/785/files/2014/03/Screen-Shot-2014-03-25-at-10.52.10-AM.png"><img class="alignnone  wp-image-705" src="http://chun.spring-2014.dataviz.journalism.cuny.edu/media/785/files/2014/03/Screen-Shot-2014-03-25-at-10.52.10-AM.png" alt="Screen Shot 2014-03-25 at 10.52.10 AM" width="343" height="202" /></a></li>
+</ol>
+Unfortunately, you can't just paste the SVG code directly into a WordPress post, as WP (out of the box) doesn't support SVG formats. There are plug-ins that allow SVG uploads and other hacks, but a simple solution is to upload your SVG to DigitalStorage and iframe it into your WP post, like this:
+
+<iframe src="http://russellchun.com/cuny/datajournalism/samplevector.html" width="600" height="400"></iframe>
+
+</div>
+</body>
+</HTML>
