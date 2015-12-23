@@ -1,0 +1,74 @@
+<html>
+
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+
+
+</head>
+
+
+<body>
+<script>
+$(function () {
+    Highcharts.setOptions({
+		lang: {
+			thousandsSep: ','
+		}
+	});
+    
+    $('#container').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+       title: {
+            text: 'New York State Pension Investments'
+        },
+        colors: ['#042e9e','#c4d0d9', '#d1d9dc', '#dde2e3', '#9d9c9a', '#72747a'],
+        tooltip: {
+            pointFormat: '<b>{point.y} billion</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.name}',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            }
+        },
+        series: [{
+            
+            colorByPoint: true,
+data:[{name:"Domestic Equities",y:37.1},
+{name:"Core Fixed Income",y:22.2},
+{name:"Non-U.S. Equities",y:11.2},
+{name:"Private Equity",y:7.5},
+{name:"Real Estate",y:6.4},
+{name:"Treasury Inflation-Protected Securities",y:5.2},
+{name:"Global Equities",y:4.9},
+{name:"Absolute Return Strategies",y:3.5},
+{name:"Non-Core Fixed Income",y:1.1},
+{name:"Opportunistic Alternatives",y:0.7},
+{name:"Real Assets",y:0.2}]
+        }]
+    });
+});
+</script>
+
+<div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+
+
+</body>
+
+</html>
