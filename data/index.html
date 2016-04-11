@@ -55,7 +55,7 @@
     <div class="jumbotron">
       <div class="container">
         <h1>Breast Cancer Rates in New York State</h1>
-        <p>Breast Cancer rates vary widely throughout the state. Albany had the highest incidents, according to data from the National Cancer Society.</p>
+        <p>Breast Cancer rates vary widely throughout the state. Hamilton and Wyoming counties had the highest incidents, according to data from the National Cancer Society.</p>
                   <p><iframe width="100%" height="520" frameborder="0" src="https://russellchunhofstra.cartodb.com/viz/26d450fa-ef8d-11e5-bb5f-0e3ff518bd15/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe></p>
         
       </div>
@@ -64,8 +64,9 @@
     <div class="container">
       <!-- Example row of columns -->
       
-          <h2>Heading</h2>
+          <h2>Hillary Clinton's Favorability Percentages Decline</h2>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div></p>
 
           
       </div>
@@ -86,5 +87,50 @@
     <script src="../../dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script>
+  $(function () {
+    $('#container').highcharts({
+        title: {
+            text: 'Monthly Average Temperature',
+            x: -20 //center
+        },
+        subtitle: {
+            text: 'Source: WorldClimate.com',
+            x: -20
+        },
+        xAxis: {
+            categories: ["3/17/16","2/24/16","1/21/16","12/17/15","10/14/15","8/13/15","7/22/15","5/29/15","3/13/15","11/21/14","5/29/14","11/16/12","1/14/11","10/27/10","4/9/10","1/22/10","10/16/09","7/31/09","4/23/09"]
+        },
+        yAxis: {
+            title: {
+                text: 'Temperature (°C)'
+            },
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        tooltip: {
+            valueSuffix: '°C'
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+        },
+        series: [{
+            name: 'Favorable',
+            data: [43,42,45,47,46,43,45,46,53,59,55,67,66,62,61,63,65,61,64]
+        }, {
+            name: 'Unfavorable',
+            data: [56,55,52,51,50,55,48,50,44,38,42,28,31,34,35,35,32,35,34]
+        }]
+    });
+});
+</script>
   </body>
 </html>
