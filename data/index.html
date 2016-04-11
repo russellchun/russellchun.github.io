@@ -90,14 +90,14 @@
     <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script>
-  $(function () {
+ $(function () {
     $('#container').highcharts({
         title: {
-            text: 'Monthly Average Temperature',
+            text: 'Hillary Clinton Polling',
             x: -20 //center
         },
         subtitle: {
-            text: 'Source: WorldClimate.com',
+            text: 'Source: CNN',
             x: -20
         },
         xAxis: {
@@ -105,7 +105,7 @@
         },
         yAxis: {
             title: {
-                text: 'Temperature (°C)'
+                text: 'Percentage'
             },
             plotLines: [{
                 value: 0,
@@ -114,7 +114,7 @@
             }]
         },
         tooltip: {
-            valueSuffix: '°C'
+            valueSuffix: '%'
         },
         legend: {
             layout: 'vertical',
@@ -123,10 +123,10 @@
             borderWidth: 0
         },
         series: [{
-            name: 'Favorable',
+            name: 'Unfavorable',
             data: [43,42,45,47,46,43,45,46,53,59,55,67,66,62,61,63,65,61,64]
         }, {
-            name: 'Unfavorable',
+            name: 'Favorable',
             data: [56,55,52,51,50,55,48,50,44,38,42,28,31,34,35,35,32,35,34]
         }]
     });
