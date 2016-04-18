@@ -76,7 +76,7 @@
 
 <h2>Nassau County Teacher Pay: Data Tables</h2>
 
-<table>
+<table id="teachersalaries">
   <thead>
     <tr>
       <th class="District-cell">District</th>
@@ -507,10 +507,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     
     
-    
     <script src="https://code.highcharts.com/highcharts.js"></script>
-<script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    
+    
 <script src="http://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
+
     
     
     
@@ -526,16 +528,9 @@
 
 <script>
 
-
-$(document).ready(function() {
-    $('#myTable').DataTable( {
-        "scrollY":        "200px",
-        "scrollCollapse": true,
-        "paging":         false
-    } );
-} );
-
-
+$(document).ready(function(){
+    $('#teachersalaries').DataTable();
+});
 
 
 
