@@ -13,6 +13,8 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="http://cdn.datatables.net/1.10.11/css/jquery.dataTables.min.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -70,6 +72,425 @@
 <h2>Nassau County Teacher Pay</h2>
 <iframe width="616" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1vpnEE2MCoFTkmVZ-pDxbBysX_Y9nl2XU2iX8PUo_t8U/pubchart?oid=2038369454&amp;format=interactive"></iframe>
 
+
+
+<h2>Nassau County Teacher Pay: DataTables</h2>
+
+<table id="myTable">
+  <thead>
+    <tr>
+      <th class="District-cell">District</th>
+      <th class="County-cell">County</th>
+      <th class="5th-cell">5th</th>
+      <th class="Median-cell">Median</th>
+      <th class="95th-cell">95th</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="firstRow">
+      <td class="District-cell">Jericho UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$41,970</td>
+      <td class="Median-cell">$134,762</td>
+      <td class="95th-cell">$149,485</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Syosset CSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">NDR</td>
+      <td class="Median-cell">$126,184</td>
+      <td class="95th-cell">NDR</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Wantagh UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">NDR</td>
+      <td class="Median-cell">$125,453</td>
+      <td class="95th-cell">NDR</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Mineola UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$77,147</td>
+      <td class="Median-cell">$121,850</td>
+      <td class="95th-cell">$131,142</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Oceanside UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$56,533</td>
+      <td class="Median-cell">$120,190</td>
+      <td class="95th-cell">$140,677</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Hewlett-Woodmere UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$72,394</td>
+      <td class="Median-cell">$119,926</td>
+      <td class="95th-cell">$136,768</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Carle Place UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$71,873</td>
+      <td class="Median-cell">$119,894</td>
+      <td class="95th-cell">$131,127</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Roslyn UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$81,140</td>
+      <td class="Median-cell">$119,404</td>
+      <td class="95th-cell">$134,134</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Levittown UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$77,478</td>
+      <td class="Median-cell">$119,122</td>
+      <td class="95th-cell">$129,378</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Valley Stream 13 UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$67,656</td>
+      <td class="Median-cell">$118,971</td>
+      <td class="95th-cell">$128,227</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Port Washington UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$65,656</td>
+      <td class="Median-cell">$118,414</td>
+      <td class="95th-cell">$131,933</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Herricks UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$69,429</td>
+      <td class="Median-cell">$118,276</td>
+      <td class="95th-cell">$136,641</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Great Neck UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$71,780</td>
+      <td class="Median-cell">$117,934</td>
+      <td class="95th-cell">$135,868</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Plainedge UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$78,599</td>
+      <td class="Median-cell">$116,364</td>
+      <td class="95th-cell">$136,401</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Manhasset UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$64,115</td>
+      <td class="Median-cell">$116,282</td>
+      <td class="95th-cell">$140,816</td>
+    </tr>
+    <tr>
+      <td class="District-cell">East Williston UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$68,000</td>
+      <td class="Median-cell">$115,374</td>
+      <td class="95th-cell">$136,883</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Lawrence UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$68,314</td>
+      <td class="Median-cell">$115,334</td>
+      <td class="95th-cell">$127,719</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Island Park UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$57,141</td>
+      <td class="Median-cell">$114,452</td>
+      <td class="95th-cell">$144,764</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Valley Stream 24 UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$67,828</td>
+      <td class="Median-cell">$114,299</td>
+      <td class="95th-cell">$128,243</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Plainview-Old Bethpage CSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$71,255</td>
+      <td class="Median-cell">$113,691</td>
+      <td class="95th-cell">$123,062</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Garden City UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$75,799</td>
+      <td class="Median-cell">$113,000</td>
+      <td class="95th-cell">$132,686</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Nassau BOCES</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$70,300</td>
+      <td class="Median-cell">$113,000</td>
+      <td class="95th-cell">$133,850</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Merrick UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$73,579</td>
+      <td class="Median-cell">$112,974</td>
+      <td class="95th-cell">$141,000</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Bellmore UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$75,968</td>
+      <td class="Median-cell">$112,795</td>
+      <td class="95th-cell">$124,224</td>
+    </tr>
+    <tr>
+      <td class="District-cell">East Meadow UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$65,330</td>
+      <td class="Median-cell">$112,671</td>
+      <td class="95th-cell">$124,653</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Oyster Bay-East Norwich CSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$73,555</td>
+      <td class="Median-cell">$112,624</td>
+      <td class="95th-cell">$140,820</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Bellmore-Merrick Central HS District</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$74,881</td>
+      <td class="Median-cell">$112,621</td>
+      <td class="95th-cell">$132,743</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Uniondale UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$67,727</td>
+      <td class="Median-cell">$112,062</td>
+      <td class="95th-cell">$133,190</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Westbury UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$68,931</td>
+      <td class="Median-cell">$111,975</td>
+      <td class="95th-cell">$130,485</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Massapequa UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$70,097</td>
+      <td class="Median-cell">$111,046</td>
+      <td class="95th-cell">$125,862</td>
+    </tr>
+    <tr>
+      <td class="District-cell">North Bellmore UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$62,237</td>
+      <td class="Median-cell">$110,772</td>
+      <td class="95th-cell">$123,624</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Valley Stream 30 UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$67,656</td>
+      <td class="Median-cell">$110,342</td>
+      <td class="95th-cell">$128,243</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Farmingdale UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">NDR</td>
+      <td class="Median-cell">$110,157</td>
+      <td class="95th-cell">NDR</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Bethpage UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$59,360</td>
+      <td class="Median-cell">$109,578</td>
+      <td class="95th-cell">$127,648</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Valley Stream Central HS District</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$67,703</td>
+      <td class="Median-cell">$109,314</td>
+      <td class="95th-cell">$127,300</td>
+    </tr>
+    <tr>
+      <td class="District-cell">North Shore CSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$70,228</td>
+      <td class="Median-cell">$109,000</td>
+      <td class="95th-cell">$136,276</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Island Trees UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$69,107</td>
+      <td class="Median-cell">$108,657</td>
+      <td class="95th-cell">$127,097</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Glen Cove City SD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$62,476</td>
+      <td class="Median-cell">$106,092</td>
+      <td class="95th-cell">$129,952</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Lynbrook UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$67,292</td>
+      <td class="Median-cell">$105,844</td>
+      <td class="95th-cell">$127,033</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Rockville Centre UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$71,977</td>
+      <td class="Median-cell">$104,646</td>
+      <td class="95th-cell">$135,066</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Hicksville UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$65,314</td>
+      <td class="Median-cell">$103,169</td>
+      <td class="95th-cell">$127,316</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Elmont UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$25,000</td>
+      <td class="Median-cell">$97,788</td>
+      <td class="95th-cell">$121,001</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Hempstead UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$59,010</td>
+      <td class="Median-cell">$96,497</td>
+      <td class="95th-cell">$119,395</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Malverne UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$66,867</td>
+      <td class="Median-cell">$95,890</td>
+      <td class="95th-cell">$126,023</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Franklin Square UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$52,800</td>
+      <td class="Median-cell">$93,000</td>
+      <td class="95th-cell">$126,900</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Roosevelt UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$65,000</td>
+      <td class="Median-cell">$91,986</td>
+      <td class="95th-cell">$118,358</td>
+    </tr>
+    <tr>
+      <td class="District-cell">New Hyde Park-Garden City Park UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">$53,620</td>
+      <td class="Median-cell">$85,789</td>
+      <td class="95th-cell">$118,359</td>
+    </tr>
+    <tr>
+      <td class="District-cell">North Merrick UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">NDR</td>
+      <td class="Median-cell">$56,067</td>
+      <td class="95th-cell">NDR</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Freeport UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">NDR</td>
+      <td class="Median-cell">$25,000</td>
+      <td class="95th-cell">NDR</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Seaford UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">NDR</td>
+      <td class="Median-cell">NDR</td>
+      <td class="95th-cell">NDR</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Baldwin UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">NDR</td>
+      <td class="Median-cell">NDR</td>
+      <td class="95th-cell">NDR</td>
+    </tr>
+    <tr>
+      <td class="District-cell">East Rockaway UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">NDR</td>
+      <td class="Median-cell">NDR</td>
+      <td class="95th-cell">NDR</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Floral Park-Bellerose UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">NDR</td>
+      <td class="Median-cell">NDR</td>
+      <td class="95th-cell">NDR</td>
+    </tr>
+    <tr>
+      <td class="District-cell">West Hempstead UFSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">NDR</td>
+      <td class="Median-cell">NDR</td>
+      <td class="95th-cell">NDR</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Sewanhaka Central HS District</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">NDR</td>
+      <td class="Median-cell">NDR</td>
+      <td class="95th-cell">NDR</td>
+    </tr>
+    <tr>
+      <td class="District-cell">Long Beach City SD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">NDR</td>
+      <td class="Median-cell">NDR</td>
+      <td class="95th-cell">NDR</td>
+    </tr>
+    <tr class="lastRow">
+      <td class="District-cell">Locust Valley CSD</td>
+      <td class="County-cell">Nassau</td>
+      <td class="5th-cell">NDR</td>
+      <td class="Median-cell">NDR</td>
+      <td class="95th-cell">NDR</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
           
       </div>
 
@@ -90,6 +511,7 @@
     
     <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
     
     
     
