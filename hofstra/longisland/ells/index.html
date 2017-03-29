@@ -1,0 +1,820 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Long Island Education Equity: English Language Learners</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+
+
+
+
+
+    <!-- CSS -->
+    
+    <style type="text/css">
+      /* Sticky footer styles
+      -------------------------------------------------- */
+      html,
+      body {
+        height: 100%;
+        /* The html and body elements cannot have any padding or margin. */
+      }
+      /* Wrapper for page content to push down footer */
+      #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -60px;
+      }
+      /* Set the fixed height of the footer here */
+      #push,
+      #footer {
+        height: 60px;
+      }
+      #footer {
+        background-color: #f5f5f5;
+      }
+      /* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+      /* Custom page CSS
+      -------------------------------------------------- */
+      /* Not required for template or sticky footer method. */
+      .container {
+        width: auto;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .container .credit {
+        margin: 20px 0;
+      }
+      
+      html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+a:hover,
+a:active {
+  outline: 0;
+}
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  width: auto\9;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+#map_canvas img,
+.google-maps img {
+  max-width: none;
+}
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: middle;
+}
+button,
+input {
+  *overflow: visible;
+  line-height: normal;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+label,
+select,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+input[type="radio"],
+input[type="checkbox"] {
+  cursor: pointer;
+}
+input[type="search"] {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+  -webkit-appearance: textfield;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+@media print {
+  * {
+    color: #000 !important;
+    text-shadow: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  @page  {
+    margin: 0.5cm;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h1,
+  h2,
+  h3 {
+    page-break-after: avoid;
+    line-height: 30px;
+  }
+}
+body {
+  margin: 20;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  background-color: #ffffff;
+}
+a {
+  color: #0088cc;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #005580;
+  text-decoration: underline;
+}
+iframe {
+display:block;
+ left:0;
+}
+  h1,
+  h2 {
+    page-break-after: avoid;
+    line-height: 30px;
+  }
+    </style>
+
+    
+  </head>
+
+  <body>
+
+
+    <!-- Part 1: Wrap all page content here -->
+    <div id="wrap">
+
+      <!-- Begin page content -->
+      <div class="container">
+        <div class="page-header">
+          <h1>English Language Learners in Long Island Public Schools</h1>
+          <h2>Students with Limited English Proficiency: 2015-2016</h2>
+          <hr>
+        </div>
+<p>
+</p>
+<h3 style="color:#FF6600">Percentage of Total Enrollment in each School District</h3>
+<!-- map  -->
+
+<iframe width="100%" height="500" frameborder="0" src="https://russellchunhofstra.carto.com/viz/a37eae02-00bf-4489-a778-4cd77178ff42/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+<p>
+Not included on the map are three central high school districts that overlap middle and elementary school districts feeding into them. The three central high school districts are <a href="https://data.nysed.gov/profile.php?instid=800000049235" target="_blank">Sewanhaka Central High School District</a>, <a href="https://data.nysed.gov/profile.php?instid=800000049241" target="_blank">Bellmore-Merrick Central High School District</a>, and <a href="https://data.nysed.gov/profile.php?instid=800000049260" target="_blank">Valley Stream Central High School District</a>.
+</p>
+<hr>
+
+<h3 style="color:#FF6600">Nassau County Public School Districts: Change in English Language Learners, 2013-2016</h3>
+
+<div style="width: 100%; margin: 0 auto;">
+ <div id="container1" style="float: left; width: 50%; height:600px"></div>
+ <div id="container2" style="float: left; width: 50%; height:600px"></div>
+ <br style="clear: left;" />
+</div>
+<hr>
+
+<h3 style="color:#FF6600">Suffolk County Public School Districts: Change in English Language Learners, 2013-2016</h3>
+
+<div style="width: 100%; margin: 0 auto;">
+ <div id="container3" style="float: left; width: 50%; height:600px"></div>
+ <div id="container4" style="float: left; width: 50%; height:600px"></div>
+ <br style="clear: left;" />
+</div>
+<hr>
+
+<h4>Note</h4>
+<i>English Language Learners</i><br>
+The New York State Education Department classifies English Language Learners (ELLs) as those who, by reason of foreign birth or ancestry, speak or understand a language other than English and speak or understand little or no English, and require support in order to become proficient in English and are identified pursuant to Section 154.3 of Commissioner's Regulations. These students are also referred to as Limited English Proficient (LEP).
+
+</ul>
+
+    <div id="footer">
+      <div class="container">
+        <p class="muted credit">Developed by Russell Chun, L. Herbert School of Communication, Hofstra University<br>Data source: <a href="https://data.nysed.gov/downloads.php" target="_blank">New York State Education Department 2016 Report Card Database</a><br>District boundaries from <a href="https://gis.ny.gov/gisdata/inventories/details.cfm?DSID=1326" target="_blank">New York State Geographic Information Systems (GIS) Clearinghouse</a></p>
+      </div>
+    </div>
+
+
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script>
+Highcharts.setOptions({
+    lang: {
+        thousandsSep: ','
+    }
+});
+    
+Highcharts.chart('container1', {
+
+  xAxis: {
+    categories: ['2013', '2014', '2015', '2016']
+  },
+  colors: ['#91003F'],
+  title: {
+    text: 'Districts with Increasing ELLs'
+  },
+
+
+  yAxis: {
+    title: {
+      text: 'Number of Students'
+    }
+  },
+  legend: {
+    enabled: false
+
+  },
+  plotOptions: {
+    series: {
+      marker: {
+        symbol: "circle",
+        enabled: false
+      }
+    }
+  },
+      credits: {
+        enabled: false
+    },
+
+
+  series: [{
+
+    name: 'WANTAGH UFSD',
+    data: [9, 13, 23, 21]
+  }, {
+    name: 'EAST ROCKAWAY UFSD',
+    data: [14, 19, 22, 28]
+  }, {
+    name: 'JERICHO UFSD',
+    data: [56, 72, 94, 109]
+  }, {
+    name: 'SEAFORD UFSD',
+    data: [13, 17, 18, 24]
+  }, {
+    name: 'PLAINEDGE UFSD',
+    data: [27, 29, 31, 49]
+  }, {
+    name: 'LAWRENCE UFSD',
+    data: [278, 302, 371, 435]
+  }, {
+    name: 'HEMPSTEAD UFSD',
+    data: [1723, 1794, 2186, 2637]
+  }, {
+    name: 'BETHPAGE UFSD',
+    data: [47, 65, 66, 71]
+  }, {
+    name: 'OYSTER BAY-EAST NORWICH CSD',
+    data: [69, 80, 92, 104]
+  }, {
+    name: 'MASSAPEQUA UFSD',
+    data: [14, 15, 18, 21]
+  }, {
+    name: 'NORTH SHORE CSD',
+    data: [34, 36, 25, 51]
+  }, {
+    name: 'EAST WILLISTON UFSD',
+    data: [31, 36, 36, 44]
+  }, {
+    name: 'ISLAND PARK UFSD',
+    data: [40, 40, 51, 55]
+  }, {
+    name: 'UNIONDALE UFSD',
+    data: [910, 956, 1095, 1236]
+  }, {
+    name: 'PLAINVIEW-OLD BETHPAGE CSD',
+    data: [48, 55, 67, 65]
+  }, {
+    name: 'GLEN COVE CITY SD',
+    data: [369, 386, 459, 491]
+  }, {
+    name: 'MERRICK UFSD',
+    data: [13, 13, 18, 17]
+  }, {
+    name: 'WEST HEMPSTEAD UFSD',
+    data: [125, 139, 167, 159]
+  }, {
+    name: 'GARDEN CITY UFSD',
+    data: [12, 9, 11, 15]
+  }, {
+    name: 'ROOSEVELT UFSD',
+    data: [610, 644, 738, 745]
+  }, {
+    name: 'FREEPORT UFSD',
+    data: [1062, 1052, 1213, 1270]
+  }, {
+    name: 'PORT WASHINGTON UFSD',
+    data: [378, 365, 420, 455]
+  }, {
+    name: 'ELMONT UFSD',
+    data: [181, 159, 188, 216]
+  }, {
+    name: 'ROSLYN UFSD',
+    data: [74, 102, 75, 86]
+  }, {
+    name: 'MINEOLA UFSD',
+    data: [230, 213, 249, 262]
+  }, {
+    name: 'LONG BEACH CITY SD',
+    data: [146, 140, 165, 165]
+  }, {
+    name: 'FARMINGDALE UFSD',
+    data: [179, 160, 191, 201]
+  }, {
+    name: 'OCEANSIDE UFSD',
+    data: [195, 187, 206, 215]
+  }, {
+    name: 'WESTBURY UFSD',
+    data: [1421, 1414, 1492, 1566]
+  }, {
+    name: 'HICKSVILLE UFSD',
+    data: [427, 440, 419, 464]
+  }, {
+    name: 'FRANKLIN SQUARE UFSD',
+    data: [45, 45, 46, 48]
+  }, {
+    name: 'ISLAND TREES UFSD',
+    data: [70, 67, 74, 75]
+  }, {
+    name: 'MANHASSET UFSD',
+    data: [53, 67, 68, 56]
+  }, {
+    name: 'NORTH BELLMORE UFSD',
+    data: [35, 36, 45, 37]
+  }, {
+    name: 'EAST MEADOW UFSD',
+    data: [243, 287, 274, 253]
+  }, {
+    name: 'NEW HYDE PARK-GARDEN CITY PARK UFSD',
+    data: [97, 92, 91, 99]
+  }, {
+    name: 'SYOSSET CSD',
+    data: [124, 122, 134, 127]
+
+  }]
+
+});
+
+</script>
+
+
+ <script>
+Highcharts.chart('container2', {
+
+  xAxis: {
+    categories: ['2013', '2014', '2015', '2016']
+  },
+  colors: ['#91003F'],
+  title: {
+    text: 'Districts with Decreasing ELLs'
+  },
+
+
+
+  yAxis: {
+   max: 3000,
+    title: {
+      text: 'Number of Students'
+    }
+  },
+  legend: {
+    enabled: false
+
+  },
+  plotOptions: {
+    series: {
+      marker: {
+        symbol: "circle",
+        enabled: false
+      }
+    }
+  },
+
+
+  series: [{
+    name: 'HERRICKS UFSD',
+    data: [184, 191, 171, 183]
+  }, {
+    name: 'LOCUST VALLEY CSD',
+    data: [88, 82, 91, 83]
+  }, {
+    name: 'VALLEY STREAM 30 UFSD',
+    data: [141, 142, 129, 131]
+  }, {
+    name: 'HEWLETT-WOODMERE UFSD',
+    data: [104, 97, 94, 96]
+  }, {
+    name: 'SEWANHAKA CENTRAL HIGH SCHOOL DISTRICT',
+    data: [220, 203, 211, 195]
+  }, {
+    name: 'VALLEY STREAM 24 UFSD',
+    data: [99, 88, 87, 86]
+  }, {
+    name: 'LEVITTOWN UFSD',
+    data: [143, 144, 131, 120]
+  }, {
+    name: 'ROCKVILLE CENTRE UFSD',
+    data: [72, 58, 53, 60]
+  }, {
+    name: 'CARLE PLACE UFSD',
+    data: [73, 68, 56, 60]
+  }, {
+    name: 'VALLEY STREAM CENTRAL HIGH SCHOOL DISTRICT',
+    data: [128, 110, 100, 104]
+  }, {
+    name: 'BELLMORE UFSD',
+    data: [28, 29, 24, 22]
+  }, {
+    name: 'NORTH MERRICK UFSD',
+    data: [21, 18, 16, 16]
+  }, {
+    name: 'VALLEY STREAM 13 UFSD',
+    data: [121, 120, 109, 91]
+  }, {
+    name: 'BELLMORE-MERRICK CENTRAL HIGH SCHOOL DISTRICT',
+    data: [36, 30, 28, 26]
+  }, {
+    name: 'FLORAL PARK-BELLEROSE UFSD',
+    data: [32, 22, 29, 20]
+  }, {
+    name: 'MALVERNE UFSD',
+    data: [81, 59, 50, 41]
+  }]
+
+});
+
+
+</script>
+
+<script>
+Highcharts.chart('container3', {
+
+  xAxis: {
+    categories: ['2013', '2014', '2015', '2016']
+  },
+  colors: ['#91003F'],
+  title: {
+    text: 'Districts with Increasing ELLs'
+  },
+
+
+
+  yAxis: {
+   max: 3000,
+    title: {
+      text: 'Number of Students'
+    }
+  },
+  legend: {
+    enabled: false
+
+  },
+  plotOptions: {
+    series: {
+      marker: {
+        symbol: "circle",
+        enabled: false
+      }
+    }
+  },
+
+
+  series: [{
+name: 'WAINSCOTT COMN SD',
+    data: [2, 4, 6, 7]
+  }, {
+    name: 'EAST QUOGUE UFSD',
+    data: [22, 31, 48, 58]
+  }, {
+    name: 'OYSTERPONDS UFSD',
+    data: [2, 2, 6, 5]
+  }, {
+    name: 'HARBORFIELDS CSD',
+    data: [35, 39, 42, 68]
+  }, {
+    name: 'BRIDGEHAMPTON UFSD',
+    data: [16, 18, 20, 30]
+  }, {
+    name: 'SAYVILLE UFSD',
+    data: [8, 10, 14, 15]
+  }, {
+    name: 'GREENPORT UFSD',
+    data: [52, 67, 74, 93]
+  }, {
+    name: 'SOUTHOLD UFSD',
+    data: [49, 61, 74, 82]
+  }, {
+    name: 'WYANDANCH UFSD',
+    data: [317, 363, 451, 523]
+  }, {
+    name: 'RIVERHEAD CSD',
+    data: [688, 743, 922, 1112]
+  }, {
+    name: 'WESTHAMPTON BEACH UFSD',
+    data: [68, 86, 98, 108]
+  }, {
+    name: 'SPRINGS UFSD',
+    data: [61, 64, 104, 96]
+  }, {
+    name: 'FIRE ISLAND UFSD',
+    data: [2, 4, 3, 3]
+  }, {
+    name: 'CENTER MORICHES UFSD',
+    data: [41, 54, 41, 61]
+  }, {
+    name: 'ELWOOD UFSD',
+    data: [61, 71, 87, 90]
+  }, {
+    name: 'SACHEM CSD',
+    data: [177, 193, 203, 259]
+  }, {
+    name: 'NORTHPORT-EAST NORTHPORT UFSD',
+    data: [70, 84, 97, 100]
+  }, {
+    name: 'CONNETQUOT CSD',
+    data: [74, 73, 93, 104]
+  }, {
+    name: 'WILLIAM FLOYD UFSD',
+    data: [288, 307, 356, 405]
+  }, {
+    name: 'MATTITUCK-CUTCHOGUE UFSD',
+    data: [42, 56, 54, 59]
+  }, {
+    name: 'BAY SHORE UFSD',
+    data: [295, 303, 373, 410]
+  }, {
+    name: 'SHELTER ISLAND UFSD',
+    data: [8, 7, 12, 11]
+  }, {
+    name: 'THREE VILLAGE CSD',
+    data: [43, 47, 50, 57]
+  }, {
+    name: 'HAMPTON BAYS UFSD',
+    data: [333, 349, 425, 437]
+  }, {
+    name: 'HAUPPAUGE UFSD',
+    data: [54, 53, 59, 71]
+  }, {
+    name: 'SOUTH COUNTRY CSD',
+    data: [272, 276, 317, 355]
+  }, {
+    name: 'HUNTINGTON UFSD',
+    data: [563, 561, 661, 732]
+  }, {
+    name: 'EAST ISLIP UFSD',
+    data: [46, 51, 49, 59]
+  }, {
+    name: 'MIDDLE COUNTRY CSD',
+    data: [321, 312, 365, 410]
+  }, {
+    name: 'AMITYVILLE UFSD',
+    data: [465, 499, 588, 592]
+  }, {
+    name: 'BROOKHAVEN-COMSEWOGUE UFSD',
+    data: [174, 170, 192, 221]
+  }, {
+    name: 'SMITHTOWN CSD',
+    data: [74, 74, 91, 94]
+  }, {
+    name: 'EAST HAMPTON UFSD',
+    data: [221, 239, 239, 273]
+  }, {
+    name: 'COMMACK UFSD',
+    data: [56, 54, 62, 69]
+  }, {
+    name: 'NORTH BABYLON UFSD',
+    data: [163, 151, 175, 195]
+  }, {
+    name: 'SOUTHAMPTON UFSD',
+    data: [176, 191, 203, 211]
+  }, {
+    name: 'BABYLON UFSD',
+    data: [16, 18, 21, 19]
+  }, {
+    name: 'WEST BABYLON UFSD',
+    data: [148, 149, 137, 176]
+  }, {
+    name: 'COPIAGUE UFSD',
+    data: [624, 677, 739, 728]
+  }, {
+    name: 'LONGWOOD CSD',
+    data: [348, 390, 395, 408]
+  }, {
+    name: 'DEER PARK UFSD',
+    data: [158, 166, 181, 184]
+  }, {
+    name: 'BRENTWOOD UFSD',
+    data: [4905, 5191, 5412, 5604]
+  }, {
+    name: 'CENTRAL ISLIP UFSD',
+    data: [1717, 1805, 1941, 1920]
+  }, {
+    name: 'EAST MORICHES UFSD',
+    data: [18, 15, 18, 20]
+  }, {
+    name: 'SOUTH HUNTINGTON UFSD',
+    data: [777, 731, 778, 860]
+  }, {
+    name: 'ISLIP UFSD',
+    data: [109, 120, 109, 120]
+  }, {
+    name: 'MILLER PLACE UFSD',
+    data: [27, 22, 23, 29]
+  }, {
+    name: 'PORT JEFFERSON UFSD',
+    data: [16, 17, 14, 17]
+  }, {
+    name: 'WEST ISLIP UFSD',
+    data: [24, 22, 25, 25]
+  }, {
+    name: 'PATCHOGUE-MEDFORD UFSD',
+    data: [829, 806, 830, 858]
+
+  }]
+
+});
+
+
+</script>
+
+<script>
+Highcharts.chart('container4', {
+
+  xAxis: {
+    categories: ['2013', '2014', '2015', '2016']
+  },
+  colors: ['#91003F'],
+  title: {
+    text: 'Districts with Decreasing ELLs'
+  },
+
+
+
+  yAxis: {
+   max: 3000,
+    title: {
+      text: 'Number of Students'
+    }
+  },
+  legend: {
+    enabled: false
+
+  },
+  plotOptions: {
+    series: {
+      marker: {
+        symbol: "circle",
+        enabled: false
+      }
+    }
+  },
+
+
+  series: [{
+name:
+
+      'ROCKY POINT UFSD',
+    data: [89, 73, 69, 88]
+  }, {
+    name: 'MONTAUK UFSD',
+    data: [33, 42, 36, 32]
+  }, {
+    name: 'LINDENHURST UFSD',
+    data: [248, 233, 244, 232]
+  }, {
+    name: 'EASTPORT-SOUTH MANOR CSD',
+    data: [45, 38, 37, 41]
+  }, {
+    name: 'KINGS PARK CSD',
+    data: [33, 39, 26, 30]
+  }, {
+    name: 'AMAGANSETT UFSD',
+    data: [8, 8, 5, 7]
+  }, {
+    name: 'HALF HOLLOW HILLS CSD',
+    data: [177, 171, 160, 154]
+  }, {
+    name: 'SHOREHAM-WADING RIVER CSD',
+    data: [16, 16, 14, 14]
+  }, {
+    name: 'SAG HARBOR UFSD',
+    data: [55, 56, 36, 44]
+  }, {
+    name: 'REMSENBURG-SPEONK UFSD',
+    data: [7, 3, 5, 5]
+  }, {
+    name: 'BAYPORT-BLUE POINT UFSD',
+    data: [14, 10, 12, 7]
+  }, {
+    name: 'LITTLE FLOWER UFSD',
+    data: [2, 3, 1, 1]
+
+
+  }]
+
+});
+
+
+</script>
+
+  </body>
+</html>
