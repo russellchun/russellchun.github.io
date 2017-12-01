@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -21,46 +23,57 @@
         color:#000;
         margin: 0;
         padding: 0;
-        
+
       }
       .swiper-container {
         width: 100%;
         height: 100%;
       }
-      
-      
+
+
       .swiper-slide {
         font-size: 18px;
         background: white;
         display: block;
-      
+
       }
 
-.center {
-  text-align: center;
-position:relative;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-  padding: 20px;
- width:80%;
-}
+      .center {
+        text-align: center;
+        position:relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-60%, -50%);
+        padding: 20px;
+        width:60%;
+      }
+      .background {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 130%;
+        height: 100%;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center;
+      }
+      
     </style>
   </head>
   <body>
-    
+
     <!-- Swiper -->
     <div class="swiper-container">
       <div class="swiper-wrapper">
 
 
         <div class="swiper-slide">
-        <div style="background-image:url('https://www.splcenter.org/sites/default/files/styles/splc_large_rectangle/public/ideology_images/SPLC_Neo-Nazi.jpg'); width:100%; height:100%; background-size:100% auto; background-repeat:no-repeat">
-        <div class="center">
-          <h1 style="font-size:44pt; color:red;">Neo-Nazis Living in Hempstead</h1>
-          <h2 style="color:red;">By Russell Chun</h2>
+          <div class="background" style="background-image:url('https://www.splcenter.org/sites/default/files/styles/splc_large_rectangle/public/ideology_images/SPLC_Neo-Nazi.jpg');">
+            <div class="center">
+              <h1 style="font-size:24pt; color:red;">Neo-Nazis Living in Hempstead: What can be done?</h1>
+              <h2 style="color:red;">By Russell Chun</h2>
+            </div>
           </div>
-        </div>
         </div>
 
         <div class="swiper-slide">
@@ -77,40 +90,40 @@ transform: translate(-50%, -50%);
         </div>
 
         <div class="swiper-slide">
-           <div class="center">
-           <iframe width="560" height="315" src="https://www.youtube.com/embed/-e3T3VHmEkg" frameborder="0" allowfullscreen></iframe>
-           </div>
+          <div class="center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-e3T3VHmEkg" frameborder="0" allowfullscreen></iframe>
+          </div>
         </div>
-            
+
         <div class="swiper-slide">
-           <div class="center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dictum eget sem at auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices orci massa, id maximus odio elementum a. Curabitur ac porttitor est, eu molestie massa. Nulla ut ultrices nunc.
-         </div>
-         </div>
-            
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
-            <div class="swiper-slide">Slide 10</div>
-            <div class="swiper-slide">Slide 11</div>
-            </div>
-          <!-- Add Pagination -->
-          <div class="swiper-pagination"></div>
+          <div class="center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dictum eget sem at auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices orci massa, id maximus odio elementum a. Curabitur ac porttitor est, eu molestie massa. Nulla ut ultrices nunc.
+          </div>
         </div>
 
-        <!-- Swiper JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.6/js/swiper.min.js"></script>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+        <div class="swiper-slide">Slide 10</div>
+        <div class="swiper-slide">Slide 11</div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
 
-        <!-- Initialize Swiper -->
-        <script>
-          var swiper = new Swiper('.swiper-container', {
-            direction: 'vertical',
-            pagination: {
-              el: '.swiper-pagination',
-              clickable: true,
-            },
-          });
-        </script>
-        </body>
-      </html>
+    <!-- Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.6/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        direction: 'vertical',
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>
