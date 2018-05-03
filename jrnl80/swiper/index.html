@@ -9,38 +9,40 @@
   <link rel="stylesheet" href="swiper.min.css">
 
   <!-- Demo styles -->
-  <style>
+  
+   <style>
 @import url('https://fonts.googleapis.com/css?family=Bangers');
-    
-    html, body {
-      position: relative;
-      height: 100%;
-    }
-    body {
-      background: #eee;
-      font-family: Arial, sans-serif;
-      font-size: 14px;
-      color:#000;
-      margin: 0;
-      padding: 0;
-    }
-    h1{
-     font-family:'Bangers'; 
-     font-size:72pt;
-    }
-    
-    .swiper-container {
-      width: 100%;
-      height: 100%;
-    }
-    .swiper-slide {
+
+      html, body {
+        position: relative;
+        height: 100%;
+      }
+      body {
+        background: #ffffff;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000000;
+        margin: 0;
+        padding: 0;
+      }
+      img{
+        width:100%;
+      }
+
+      h1 {
+        color:red;
+        font-family:'Bangers';
+      }
+
+      .swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+      .swiper-slide {
         font-size: 18px;
-        background: white;
+        background: #ffffff;
         display: block;
       }
-    img{
-      width:100%;
-    }
       .center {
         text-align: center;
         position:relative;
@@ -50,7 +52,33 @@
         padding: 20px;
         width:80%;
       }
-  </style>
+
+      .background {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center;
+      }
+      .video-container {
+        position:relative;
+        padding-bottom:56.25%;
+        padding-top:30px;
+        height:0;
+        overflow:hidden;
+      }
+      .video-container iframe {
+        position:absolute;
+        top:5%;
+        left:5%;
+        width:90%;
+        height:90%;
+      }
+
+    </style>
 </head>
 <body>
   <!-- Swiper -->
